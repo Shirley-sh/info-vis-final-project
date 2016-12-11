@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #333333;
+}
+
+#map {
+    width: 600px;
+    height: 600px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 0;
+    background-color: #5a343a;
+}
+#data {
+    width: 600px;
+    height: 600px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+    /*border: 1px solid red;*/
+}
+
+#controller {
+    width: 600px;
+    height: 600px;
+    position: fixed;
+    top: 20px;
+    right: 0;
+    z-index: 10;
+    /*border: 1px solid red;*/
+}
+
+#histogram-wrapper{
+    width: 600px;
+    height: 400px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+}
+
+#histogram-wrapper text{
+    fill: #fff;
+    font: 12px sans-serif;
+}
+
+
+#histogram-wrapper text.number-blue{
+    fill: #4C9CF2;
+    font: 8px sans-serif;
+    opacity: 0.3;
+}
+
+#histogram-wrapper text.number-yellow{
+    fill: #FFDF40;
+    font: 8px sans-serif;
+    opacity: 0.3;
+}
+
+#histogram-wrapper text.number-yellow:hover{
+    opacity: 1;
+    z-index: 40;
+}
+
+#histogram-wrapper text.number-blue:hover{
+    opacity: 1;
+    z-index: 40;
+}
+
+.circle-ui:hover {
+    cursor: pointer;
+    fill: #ffef95;
+}
+
+line { mix-blend-mode: hard-light; }
+
+.isolate { isolation: isolate; }
+
+p {
+    font-family: Helvetica;
+    margin-left: 10px;
+    color: white;
+}
+
+.timeline-axis text {
+    fill: white;
+    font: 10px sans-serif;
+}
+
+.timeline-axis path {
+    fill: none;
+    stroke: #fff;
+    shape-rendering: crispEdges;
+}
+
+.timeline-text {
+    fill: white;
+}
+
+
+.bar text {
+    fill: #fff;
+    font: 7px sans-serif;
+}
+
+
+#histogram-x-axis path, #histogram-y-axis path {
+    fill: none;
+    stroke: #fff;
+    shape-rendering: crispEdges;
+}
+
+#histogram-x-axis text, #histogram-y-axis text {
+    fill: white;
+    font: 10px sans-serif;
+}
