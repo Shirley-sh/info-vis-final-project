@@ -242,7 +242,8 @@
 	}
 	function loadScript() {
 		var script = document.createElement('script');
-		script.src = 'https://maps.googleapis.com/maps/api/js?sensor=false&callback=initMap';
+		// https://maps.googleapis.com/maps/api/js?key=AIzaSyCfZaiqb8dFDxUjeE-SPP5xj1ElOplBhcM&callback=initMap
+		script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCfZaiqb8dFDxUjeE-SPP5xj1ElOplBhcM&callback=initMap&language=en';
 		document.body.appendChild(script);
 	}
 
